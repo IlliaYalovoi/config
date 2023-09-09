@@ -7,11 +7,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlightin
 
 source $ZSH/oh-my-zsh.sh
 
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='nano'
-else
-  export EDITOR='nano'
-fi
+export EDITOR='nano'
 
 if test -d ~/.local/bin
 then
@@ -54,7 +50,5 @@ alias fgrep='grep -F --color=auto'
 alias egrep='grep -E --color=auto'
 
 alias jctl="journalctl -p 3 -xb"
-
 alias sctl="sudo systemctl"
-alias "sctl r"="sudo systemctl restart"
 alias snano="sudo nano"
